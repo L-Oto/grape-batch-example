@@ -1,8 +1,5 @@
 module Twitter
   class API < Grape::API
-
-    mount Grape::Batch::Base.new(Twitter::API) => '/batch'
-
     format :json
     prefix :api
 
